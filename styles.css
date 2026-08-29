@@ -651,3 +651,21 @@ h3 {
   .footer-grid { flex-direction: column; }
   .footer-note { text-align: left; }
 }
+
+.affiliation-grid .output-card h3 { font-size: 1.05rem; }
+.affiliation-grid .output-card p { margin-bottom: 0; }
+.acknowledgement-card {
+  margin-top: 28px;
+  padding: 28px;
+  border-radius: var(--radius);
+  background: white;
+  border: 1px solid var(--line);
+}
+.acknowledgement-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+.contact-lines { margin-top: 18px; }
+.contact-lines p { margin: 6px 0; }
+.contact-lines a { color: var(--accent-dark); text-decoration: none; font-weight: 700; }

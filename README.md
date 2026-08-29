@@ -29,16 +29,19 @@ MRXtra/
 
 Do not upload the outer `MRXtra_GitHub_Pages` folder itself unless you intend to serve the site from a subdirectory.
 
-## 2. Edit these placeholders before launch
+## 2. Contact and project information
 
-Search `index.html` for:
+This version already includes:
 
-- `YOUR_EMAIL@example.com`
-- `YOUR_USERNAME`
+- GitHub username: `aazubair01`
+- Public contact: `aazubair01@gmail.com`
+- Co-investigator contact: `charles.delahunt@proton.me`
+- Phone: `+234 818 981 7182`
+- AMAI-MICCAI 2026 accepted abstract PDF
+- Author list and affiliations from the accepted abstract
+- Exact acknowledgement text from the accepted abstract
 
-Replace them with your public email address and GitHub username.
-
-Also review the Funding & Collaboration section and add the exact institutional acknowledgements required by the MICCAI award and your collaborators.
+Review these details before each public release.
 
 ## 3. Enable GitHub Pages
 
