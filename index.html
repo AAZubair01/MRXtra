@@ -1,1 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MRXtra is an AI-assisted MRI safety screening, workflow decision support and protocol optimization research platform designed for resource-limited clinical environments.">
+  <meta name="theme-color" content="#07111f">
+  <title>MRXtra | MRI Safety & Workflow Research</title>
+  <link rel="icon" href="assets/mrxtra-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="MRXtra home">
+        <img src="assets/mrxtra-mark.svg" alt="" width="34" height="34">
+        <span>MRXtra</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#platform">Platform</a>
+        <a href="#evidence">Clinical Evidence</a>
+        <a href="#research">Research</a>
+        <a href="#outputs">Outputs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">MRI safety • clinical workflow • protocol decision support</div>
+          <h1>Safer MRI starts <span>before the scan.</span></h1>
+          <p class="hero-lead">
+            MRXtra is an AI-assisted research platform designed to strengthen MRI safety screening,
+            workflow decision support and patient-specific protocol optimization in resource-limited clinical environments.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#evidence">Explore clinical evidence</a>
+            <a class="button secondary" href="#research">View research programme</a>
+          </div>
+
+          <div class="hero-note">
+            <strong>Clinical principle:</strong> MRXtra supports qualified MRI professionals; it does not replace professional clinical judgement.
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card">
+            <div class="scanner-ring">
+              <div class="scanner-core">
+                <span>MRI</span>
+              </div>
+            </div>
+            <div class="signal signal-a"></div>
+            <div class="signal signal-b"></div>
+            <div class="signal signal-c"></div>
+            <div class="mini-card mini-1">
+              <strong>Safety</strong>
+              <span>structured screening</span>
+            </div>
+            <div class="mini-card mini-2">
+              <strong>Protocol</strong>
+              <span>risk-aware support</span>
+            </div>
+            <div class="mini-card mini-3">
+              <strong>Workflow</strong>
+              <span>auditable records</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container split">
+        <div>
+          <div class="section-kicker">The upstream gap</div>
+          <h2>Improving decisions made before MRI acquisition</h2>
+        </div>
+        <div class="prose">
+          <p>
+            MRI safety and image quality are strongly influenced by pre-acquisition decisions, including
+            safety screening, contraindication assessment, implant evaluation and protocol selection.
+          </p>
+          <p>
+            In resource-limited settings, these processes may remain paper-based, inconsistently documented
+            and highly dependent on individual staff experience. This can contribute to incomplete screening,
+            workflow delays, missed safety information and suboptimal acquisition.
+          </p>
+          <p>
+            MRXtra focuses on this upstream clinical workflow, where patient-safety and acquisition decisions are made,
+            rather than on downstream image interpretation alone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="platform" class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">The platform</div>
+          <h2>One platform. Three upstream functions.</h2>
+          <p>
+            MRXtra combines deterministic safety logic with AI-assisted decision support and structured workflow tools.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-number">01</div>
+            <h3>MRI safety screening</h3>
+            <p>
+              Structured digital screening with conditional branching, deterministic safety rules,
+              contraindication flagging and risk stratification.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-number">02</div>
+            <h3>Protocol decision support</h3>
+            <p>
+              Patient- and risk-aware protocol suggestions incorporating clinical indication,
+              anthropometry, implant considerations and estimated SAR.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-number">03</div>
+            <h3>Structured MRI workflow</h3>
+            <p>
+              Digital documentation, action tracking, communication, audit trails and standardized
+              workflow records for clinical review and quality improvement.
+            </p>
+          </article>
+        </div>
+
+        <div class="workflow">
+          <div class="workflow-step">
+            <span>1</span>
+            <strong>Patient screening</strong>
+            <small>Structured digital questionnaire</small>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <span>2</span>
+            <strong>Safety logic</strong>
+            <small>Rule-based risk evaluation</small>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <span>3</span>
+            <strong>MRI professional review</strong>
+            <small>Flags, missing data & actions</small>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <span>4</span>
+            <strong>Protocol support</strong>
+            <small>Patient-specific suggestions</small>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <span>5</span>
+            <strong>Final clinical decision</strong>
+            <small>Accept, modify or override</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="evidence" class="section evidence-section">
+      <div class="container">
+        <div class="section-heading light">
+          <div class="section-kicker">Clinical evidence</div>
+          <h2>Completed single-centre clinical feasibility evaluation</h2>
+          <p>
+            Prospective single-arm pre-post quasi-experimental study in a Nigerian tertiary MRI centre:
+            80 patients in the paper-based baseline phase and 80 patients in the MRXtra-assisted phase.
+          </p>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric">
+            <strong>160</strong>
+            <span>consecutive MRI patients</span>
+          </div>
+          <div class="metric">
+            <strong>53.8% → 96.3%</strong>
+            <span>screening completeness</span>
+            <small>p &lt; 0.001</small>
+          </div>
+          <div class="metric">
+            <strong>2 → 15</strong>
+            <span>contraindications detected</span>
+            <small>p = 0.001</small>
+          </div>
+          <div class="metric">
+            <strong>105 → 78 min</strong>
+            <span>median total workflow time</span>
+            <small>p &lt; 0.001</small>
+          </div>
+          <div class="metric">
+            <strong>79.0 / 100</strong>
+            <span>mean System Usability Scale</span>
+            <small>n = 5 radiographers</small>
+          </div>
+          <div class="metric">
+            <strong>70%</strong>
+            <span>protocol suggestions accepted without modification</span>
+            <small>80 recommendations generated</small>
+          </div>
+        </div>
+
+        <div class="evidence-detail-grid">
+          <article class="evidence-panel">
+            <h3>Protocol decision support</h3>
+            <ul>
+              <li><strong>80</strong> recommendations generated</li>
+              <li><strong>56 (70%)</strong> accepted without modification</li>
+              <li><strong>16 (20%)</strong> modified</li>
+              <li><strong>8 (10%)</strong> overridden</li>
+              <li>Estimated SAR range: <strong>0.46–1.92 W/kg</strong></li>
+              <li><strong>78/80</strong> within IEC limits; <strong>2/80</strong> near limit</li>
+            </ul>
+          </article>
+
+          <article class="evidence-panel">
+            <h3>Workflow & safety observations</h3>
+            <ul>
+              <li>Screening duration was <strong>not significantly different</strong> between phases</li>
+              <li>Repeat scans: <strong>8/80 → 4/80</strong> (p = 0.29)</li>
+              <li><strong>20</strong> action items created; all resolved</li>
+              <li><strong>7</strong> logged technical/workflow adverse events</li>
+              <li>All logged events resolved <strong>without patient harm</strong></li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="interpretation">
+          <strong>Interpretation</strong>
+          <p>
+            MRXtra-assisted screening was associated with substantially higher screening completeness,
+            greater contraindication detection and shorter total workflow time, while screening duration itself
+            remained unchanged. Because this was a single-centre, non-randomized pre-post feasibility study,
+            external and multicentre evaluation is required before broader effectiveness claims are made.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="expert-validation">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Technical & expert evidence</div>
+          <h2>MRI safety rule-engine validation</h2>
+          <p>Accepted Abstract | AMAI-MICCAI 2026</p>
+        </div>
+
+        <div class="expert-grid">
+          <div class="expert-card hero-stat">
+            <strong>42</strong>
+            <span>evidence-based MRI safety rules</span>
+          </div>
+          <div class="expert-card">
+            <strong>95.2%</strong>
+            <span>rule correctness — expert rater 1</span>
+          </div>
+          <div class="expert-card">
+            <strong>97.6%</strong>
+            <span>rule correctness — expert rater 2</span>
+          </div>
+          <div class="expert-card">
+            <strong>κ = 0.66</strong>
+            <span>inter-rater agreement</span>
+          </div>
+          <div class="expert-card">
+            <strong>7/7</strong>
+            <span>life-threatening safety rules correctly classified</span>
+          </div>
+          <div class="expert-card">
+            <strong>14/15</strong>
+            <span>integrated clinical scenario agreement</span>
+          </div>
+        </div>
+
+        <div class="publication-callout" id="publication-note">
+          <div>
+            <span class="status-pill">Accepted</span>
+            <h3>AMAI-MICCAI 2026 abstract</h3>
+            <p>
+              The abstract has been accepted for AMAI-MICCAI 2026. A public PDF can be added here before
+              the conference, and the same page can later be updated with the official proceedings or DOI.
+            </p>
+          </div>
+          <a class="button secondary disabled" href="#" aria-disabled="true" onclick="return false;">Abstract PDF coming soon</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Research programme</div>
+          <h2>From co-design to clinical translation</h2>
+          <p>
+            MRXtra is being developed as a staged evidence programme rather than as an autonomous diagnostic system.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Clinical co-design</h3>
+              <p>Engage MRI clinicians—radiographers and radiologists—to understand real needs and design solutions together.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>System development</h3>
+              <p>Develop interpretable safety screening, workflow and protocol decision-support components suitable for resource-limited environments.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>Expert validation</h3>
+              <p>Evaluate the MRI safety rule engine against expert assessment and integrated clinical scenarios.</p>
+            </div>
+          </article>
+          <article>
+            <span>04</span>
+            <div>
+              <h3>Clinical feasibility</h3>
+              <p>Completed prospective evaluation in routine MRI practice at a single Nigerian tertiary centre.</p>
+            </div>
+          </article>
+          <article>
+            <span>05</span>
+            <div>
+              <h3>External validation</h3>
+              <p>Extend evaluation across institutions, scanners, patient populations and clinical workflows.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section equity-section">
+      <div class="container equity-grid">
+        <div>
+          <div class="section-kicker">Health equity</div>
+          <h2>Designed around resource-limited MRI environments</h2>
+          <p>
+            MRXtra targets clinical settings where dedicated MRI safety personnel, integrated electronic records,
+            workflow infrastructure and specialist decision support may be limited.
+          </p>
+        </div>
+
+        <div class="equity-list">
+          <div>Standardized MRI safety screening</div>
+          <div>Locally deployable, low-compute decision support</div>
+          <div>Structured and auditable MRI records</div>
+          <div>Human oversight of all clinical decisions</div>
+          <div>Locally representative workflow data</div>
+          <div>Scalable implementation across constrained settings</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="outputs" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Research outputs</div>
+          <h2>Evidence and dissemination</h2>
+        </div>
+
+        <div class="output-grid">
+          <article class="output-card">
+            <span class="status-pill">Accepted</span>
+            <h3>Expert Validation of the MRXtra MRI Safety Rule Engine</h3>
+            <p><strong>AMAI-MICCAI 2026</strong></p>
+            <p>Accepted abstract; conference publication forthcoming.</p>
+            <a href="#publication-note">View abstract status →</a>
+          </article>
+
+          <article class="output-card">
+            <span class="status-pill neutral">Completed study</span>
+            <h3>Clinical Feasibility of an Upstream AI-Assisted Decision Support System for MRI Safety Screening and Protocol Optimization in a Nigerian Tertiary Center</h3>
+            <p>Prospective single-centre pre-post clinical feasibility evaluation.</p>
+            <p><strong>Manuscript under revision.</strong></p>
+          </article>
+
+          <article class="output-card">
+            <span class="status-pill neutral">Project</span>
+            <h3>MICCAI Health Equity Project</h3>
+            <p>
+              Development and clinical translation of AI-assisted MRI safety and acquisition decision support
+              for resource-limited clinical settings.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container split">
+        <div>
+          <div class="section-kicker">Funding & collaboration</div>
+          <h2>Multidisciplinary development</h2>
+        </div>
+        <div class="prose">
+          <p>
+            This project is supported by a <strong>2026 MICCAI Society Award for the Advancement of Health Equity</strong>.
+          </p>
+          <p>
+            MRXtra brings together MRI radiographers, radiologists, imaging scientists and MRI physicists,
+            software and AI researchers, health informatics specialists, and implementation researchers.
+          </p>
+          <p class="small-note">
+            Add the exact institutional acknowledgements required by your award, accepted abstract and collaborators before public launch.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-card">
+        <div>
+          <div class="section-kicker">Contact</div>
+          <h2>MRXtra Research Project</h2>
+          <p>
+            For research collaboration, clinical evaluation or academic enquiries, add your preferred public contact details here.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:YOUR_EMAIL@example.com">Email the research team</a>
+          <a class="button secondary" href="https://github.com/YOUR_USERNAME/MRXtra">GitHub repository</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <img src="assets/mrxtra-mark.svg" alt="" width="30" height="30">
+          <span>MRXtra</span>
+        </a>
+        <p>AI-assisted MRI safety and workflow research.</p>
+      </div>
+      <div class="footer-note">
+        <p>© 2026 MRXtra Research Project.</p>
+        <p>Research decision-support system. Not intended to replace professional clinical judgement.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
