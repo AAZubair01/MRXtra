@@ -1,130 +1,128 @@
-# MRXtra GitHub Pages Website
+# MRXtra
 
-This folder contains a complete static website for the MRXtra research project.
+### AI-Assisted MRI Safety Screening, Workflow Decision Support, and Protocol Optimization
 
-## Files
+MRXtra is a **web-based, AI-assisted clinical decision-support platform** designed to strengthen MRI safety screening, workflow decision support, and patient-specific protocol optimization, particularly in resource-limited clinical environments.
 
-- `index.html` — page content
-- `styles.css` — styling and responsive layout
-- `script.js` — mobile navigation
-- `assets/mrxtra-mark.svg` — simple temporary project mark
-- `publications/` — place public abstracts/publications here
+The platform focuses on the **upstream MRI workflow**, where critical decisions concerning patient safety, contraindications, implants and devices, and acquisition protocols are made before image acquisition.
 
-## 1. Upload to your GitHub repository
+> **Clinical principle:** MRXtra provides decision support for qualified MRI professionals. It is not intended to replace professional clinical judgement.
 
-Upload the contents of this folder to the ROOT of your `MRXtra` repository.
+## Platform Overview
 
-Your repository should look like:
+MRXtra integrates three core functions:
 
-```text
-MRXtra/
-├── index.html
-├── styles.css
-├── script.js
-├── assets/
-│   └── mrxtra-mark.svg
-└── publications/
-    └── README.md
-```
+- **MRI Safety Screening** — structured digital screening, adaptive questioning, deterministic evidence-based safety rules, contraindication flagging, and risk classification.
+- **Protocol Decision Support** — patient- and risk-aware protocol suggestions informed by clinical indication, patient factors, safety classification, and acquisition considerations.
+- **Structured MRI Workflow** — standardized digital documentation, action tracking, communication, audit trails, and workflow records.
 
-Do not upload the outer `MRXtra_GitHub_Pages` folder itself unless you intend to serve the site from a subdirectory.
+The platform combines deterministic safety logic with AI-assisted functions while maintaining human oversight of clinical decisions.
 
-## 2. Contact and project information
+## Clinical Feasibility Evaluation
 
-This version already includes:
+MRXtra has undergone a **completed prospective single-centre pre-post clinical feasibility evaluation** in routine MRI practice at a Nigerian tertiary centre.
 
-- GitHub username: `aazubair01`
-- Public contact: `aazubair01@gmail.com`
-- Co-investigator contact: `charles.delahunt@proton.me`
-- Phone: `+234 818 981 7182`
-- AMAI-MICCAI 2026 accepted abstract PDF
-- Author list and affiliations from the accepted abstract
-- Exact acknowledgement text from the accepted abstract
+The study included **160 consecutive MRI patients**, comprising 80 patients screened using the existing paper-based workflow and 80 patients screened using MRXtra.
 
-Review these details before each public release.
+Selected findings included:
 
-## 3. Enable GitHub Pages
+| Outcome | Baseline | MRXtra |
+|---|---:|---:|
+| Screening completeness | 53.8% | 96.3% |
+| Contraindications detected | 2 | 15 |
+| Median total workflow time | 105 min | 78 min |
 
-In your GitHub repository:
+Additional findings:
 
-1. Go to **Settings**
-2. Choose **Pages**
-3. Under **Build and deployment**, select **Deploy from a branch**
-4. Select the `main` branch
-5. Select `/(root)`
-6. Save
+- Screening completeness: **p < 0.001**
+- Contraindication detection: **p = 0.001**
+- Total workflow time: **p < 0.001**
+- Mean System Usability Scale score: **79.0/100** among five radiographers
+- **80** protocol recommendations generated
+- **70%** accepted without modification
+- **20%** modified
+- **10%** overridden
+- Logged technical/workflow events were resolved **without patient harm**
 
-Your public URL will normally be:
+These findings support clinical feasibility in the evaluated setting. As a single-centre, non-randomized pre-post study, external and multicentre validation is required before broader effectiveness claims are made.
 
-`https://YOUR_USERNAME.github.io/MRXtra/`
+## MRI Safety Rule-Engine Validation
 
-## 4. Add the accepted AMAI-MICCAI 2026 abstract
+The MRXtra MRI safety rule engine has also undergone expert evaluation, reported in an abstract accepted at **AMAI-MICCAI 2026**.
 
-When you are ready to make the accepted abstract public:
+Key results:
 
-1. Upload the PDF to:
-   `publications/AMAI-MICCAI-2026-Abstract.pdf`
-2. Open `index.html`
-3. Find:
-   `Abstract PDF coming soon`
-4. Replace the disabled link with:
+- **42** evidence-based MRI safety rules
+- **8** clinical domains
+- **95.2%** rule correctness — Expert Rater 1
+- **97.6%** rule correctness — Expert Rater 2
+- **κ = 0.66** inter-rater agreement
+- **7/7** evaluated life-threatening safety rules correctly classified by both raters
+- **14/15** agreement across integrated patient scenarios
+- Rules mapped to **ACR 2024 guidance**
 
-```html
-<a class="button secondary"
-   href="publications/AMAI-MICCAI-2026-Abstract.pdf"
-   target="_blank"
-   rel="noopener">
-  View accepted abstract
-</a>
-```
+The accepted abstract is available in the [`publications`](publications/) directory.
 
-5. Commit the change.
+## Research Programme
 
-Later, when the official proceedings/DOI becomes public, point this button to the official publication page. Your poster QR code can remain unchanged because it points to the MRXtra homepage.
+The development and evaluation of MRXtra follow a staged clinical-translation pathway:
 
-## 5. Clinical study data used on this page
+1. **Clinical co-design** — engage MRI clinicians, including radiographers and radiologists, to identify real workflow needs and co-design appropriate solutions.
+2. **System development** — develop interpretable MRI safety, workflow, and protocol decision-support components.
+3. **Expert validation** — evaluate the MRI safety rule engine using expert assessment and integrated clinical scenarios.
+4. **Clinical feasibility evaluation** — prospectively evaluate the platform in routine MRI practice.
+5. **External validation** — extend evaluation across institutions, scanners, patient populations, and clinical workflows.
 
-The clinical evidence section is based on the uploaded manuscript:
+## Health Equity Focus
 
-**Clinical Feasibility of an Upstream AI-Assisted Decision Support System for MRI Safety Screening and Protocol Optimization in a Nigerian Tertiary Center**
+MRXtra is designed around challenges encountered in resource-limited MRI environments, including variable workflow standardization, paper-based safety screening, limited specialist MRI safety support, and fragmented clinical documentation.
 
-Key values reproduced in the site:
+The project aims to support:
 
-- 160 consecutive patients: 80 baseline and 80 MRXtra
-- Screening completeness: 53.8% → 96.3%, p < 0.001
-- Contraindications detected: 2 → 15, p = 0.001
-- Median total workflow time: 105 → 78 minutes, p < 0.001
-- SUS: 79.0 ± 4.6, n = 5 radiographers
-- 80 protocol suggestions
-- 70% accepted without modification
-- 20% modified
-- 10% overridden
-- Estimated SAR 0.46–1.92 W/kg
-- Seven logged technical/workflow adverse events; all resolved without patient harm
+- standardized MRI safety screening;
+- locally deployable decision support;
+- structured and auditable MRI records;
+- human oversight of clinical decisions;
+- development of locally representative MRI workflow data; and
+- scalable implementation across resource-constrained clinical settings.
 
-The page deliberately describes the work as a **completed single-centre clinical feasibility evaluation**, not as a preliminary study.
+## Funding and Acknowledgements
 
-## 6. Before public launch
+This project is supported by a **2026 MICCAI Society Award for the Advancement of Health Equity**.
 
-Check:
+We also thank **NordInsight (Denmark)** and **AIRA Africa** for their generous collaborative support.
 
-- [ ] Contact email
-- [ ] GitHub repository link
-- [ ] Team/institution names
-- [ ] Exact grant acknowledgement
-- [ ] Collaborator acknowledgements
-- [ ] Accepted abstract PDF, if permitted
-- [ ] Any logo/image permissions
-- [ ] No patient-identifiable information
-- [ ] No passwords, API keys, IP addresses, internal server details or source-code secrets
+## Research Team
 
-## 7. Recommended next upgrade
+MRXtra is being developed through multidisciplinary collaboration involving MRI radiographers, radiologists, imaging scientists and MRI physicists, software and AI researchers, health informatics specialists, and implementation researchers.
 
-Once the basic site is live, add:
+Authors associated with the AMAI-MICCAI 2026 accepted abstract include:
 
-- an MRXtra workflow/architecture figure
-- a project team section
-- institutional logos if permission allows
-- a publications list with DOI links
-- a permanent contact email
-- optional custom domain such as `mrxtra.org` if the project matures
+**Abdulrazaq A. Zubair, Musa Y. Dambele, M. Abba, Nafiu M. Muhammad, Abbas M. Rabiu, A. Muhammad, Zulyadaini A. Muhammad, M. Tarisiro, Musa M. Sani, M. Sidi, M. Yakubu, and Charles B. Delahunt.**
+
+## Project Website
+
+**MRXtra Project Website:**  
+https://aazubair01.github.io/MRXtra/
+
+## Contact
+
+**Email**
+
+- **PI:** aazubair01@gmail.com
+- **CPI:** charles.delahunt@proton.me
+
+**Phone:** +234 818 981 7182
+
+## Publications
+
+- **MRXtra: An AI-Assisted System for MRI Safety Screening, Workflow Decision Support, and Protocol Optimization in Resource-Limited Settings.** Accepted abstract, AMAI-MICCAI 2026. Conference publication forthcoming.
+- **Clinical Feasibility of an Upstream AI-Assisted Decision Support System for MRI Safety Screening and Protocol Optimization in a Nigerian Tertiary Center.** Completed prospective single-centre clinical feasibility study; manuscript under revision.
+
+## Disclaimer
+
+MRXtra is a clinical decision-support platform under research and evaluation. It is **not intended to replace the judgement of qualified MRI professionals**, institutional MRI safety procedures, or applicable regulatory and professional guidance.
+
+---
+
+© 2026 MRXtra Project
